@@ -1,0 +1,24 @@
+---
+- name: test connection
+  hosts: group1  # groupName in inventory
+  tasks:
+    # task 1
+    - name: test connection
+      ping:
+      register: message1
+    # task 3
+    - name: print debug message
+      debug:
+        msg: "{{ message1 }}"
+
+    
+    # task 3
+    - name: Execute date command over Command module
+      command: 'cat /etc/os-release'
+      # ansible.builtin.shell: cat /etc/os-release
+      register: message2
+
+    # task 4
+    - name: print debug message
+      debug:
+        msg: "{{ message2 }}"
