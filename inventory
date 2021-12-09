@@ -1,0 +1,4 @@
+[group1]
+debian1  ansible_ssh_host=127.0.0.1  ansible_ssh_port=2222  ansible_user=vagrant  ansible_ssh_private_key_file=/Users/barry/projects/github/vagrantfiles/debian11/.vagrant/machines/default/virtualbox/private_key
+debian2  ansible_ssh_host=127.0.0.1  ansible_ssh_port=2200  ansible_user=vagrant  ansible_ssh_private_key_file=/Users/barry/projects/github/vagrantfiles/debian11-2/.vagrant/machines/default/virtualbox/private_key
+
