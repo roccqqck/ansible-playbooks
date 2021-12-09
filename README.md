@@ -108,12 +108,12 @@ ansible all -m command -a 'echo Hello World on Vagrant.'
 
 test (required ansible-lint installed)
 ```
-ansible-lint ./playbook.yml
+ansible-lint ./PATH/playbook.yml
 ```
 
 run
 ```
-ansible-playbook ./playbook.yml
+ansible-playbook ./PATH/playbook.yml
 ```
 ```
 PLAY [group1] **************************************************************************
